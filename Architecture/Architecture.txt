@@ -1,0 +1,16 @@
+🏗 Model Architectures
+
+🔹 SRCNN (Super-Resolution CNN)
+3-layer CNN: feature extraction → non-linear mapping → reconstruction.
+Input: bicubic-upsampled LR image → Output: HR image.
+Fast and simple but limited in texture recovery.
+
+🔹 SRGAN (Super-Resolution GAN)
+Generator: residual blocks + pixel shuffle upscaling.
+Discriminator: CNN to classify real vs fake HR images.
+Uses perceptual + adversarial loss. Produces sharper, realistic details.
+
+🔹 ESRGAN (Enhanced SRGAN)
+Generator: Residual-in-Residual Dense Blocks (RRDB).
+Discriminator: Relativistic GAN (RaGAN).
+Achieves best perceptual quality and fine details, but with higher training cost.
