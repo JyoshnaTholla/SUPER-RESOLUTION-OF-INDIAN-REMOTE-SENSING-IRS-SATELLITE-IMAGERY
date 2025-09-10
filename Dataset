@@ -2,12 +2,17 @@
 
 This project uses **Indian Remote Sensing (IRS) satellite imagery** obtained from **ResourceSat-2/2A**, sourced from **NRSC–ISRO**.
 
-- **High-Resolution (HR) Images:** 1m resolution, covering major parts of Hyderabad region.  
-- **Low-Resolution (LR) Images:** 5m resolution, downsampled versions of the same scenes.  
-- **Preprocessing Steps:**  
-  - Layer stacking and subsetting performed using **ERDAS Imagine**.  
-  - Images cropped into **512×512 pixel patches** for training and testing.  
-  - HR and LR images paired with identical naming conventions to simplify model training and evaluation.  
+The dataset consists of paired Medium-Resolution (MR) and High-Resolution (HR) Indian Remote Sensing (IRS) satellite images, prepared using ERDAS Imagine for preprocessing, layer stacking, and subsetting.
+
+Resolution:
+MR images: 5 meters per pixel
+HR images: 1 meter per pixel
+Image Size: 512 × 512 pixels
+Channels: 3 (RGB)
+Format: PNG (converted from TIFF)
+Preparation: Images were spatially aligned, normalized, and split into 80% training and 20% testing sets.
+Visualization: Images are NCC (Natural Colour Composite) generated using ERDAS Imagine and QGIS for enhanced interpretation.
+These paired images enable effective supervised training for super-resolution tasks.
 
 ### ⚠️ Note
 - The **full dataset cannot be shared** due to **security and confidentiality restrictions**.  
