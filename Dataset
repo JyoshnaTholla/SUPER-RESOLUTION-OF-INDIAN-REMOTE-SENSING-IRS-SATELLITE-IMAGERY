@@ -1,0 +1,19 @@
+## 📂 Dataset Description
+
+This project uses **Indian Remote Sensing (IRS) satellite imagery** obtained from **ResourceSat-2/2A**, sourced from **NRSC–ISRO**.
+
+- **High-Resolution (HR) Images:** 1m resolution, covering major parts of Hyderabad region.  
+- **Low-Resolution (LR) Images:** 5m resolution, downsampled versions of the same scenes.  
+- **Preprocessing Steps:**  
+  - Layer stacking and subsetting performed using **ERDAS Imagine**.  
+  - Images cropped into **512×512 pixel patches** for training and testing.  
+  - HR and LR images paired with identical naming conventions to simplify model training and evaluation.  
+
+### ⚠️ Note
+- The **full dataset cannot be shared** due to **security and confidentiality restrictions**.  
+- For demonstration purposes, this repository contains only a **small sample** of HR and LR images in the `dataset_sample/` folder.  
+
+### Usage
+If you wish to replicate this project, you can use **publicly available datasets**
+
+You may also prepare your own HR/LR image pairs using any remote sensing dataset by applying bicubic downsampling to generate LR images.
